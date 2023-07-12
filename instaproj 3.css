@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+    color: var(--sec);
+    margin: 0px;
+    /* margin: The margin CSS shorthand property sets the margin area on all four sides of an element.*/
+}
+h1{
+    font-size: 6rem;
+    margin: 5% 0;
+}
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Pack items around the center */
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    color: red;
+}
+.code-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: rgba(199, 0, 0, 0);
+    width: 850px;
+    text-align: left;
+}
+.code-line {
+    opacity: 1;
+
+}
+.code-line::after {
+    content: "UR MOM TOO";
+    animation: code 9s linear;
+}
+@keyframes code {
+    0% {
+        opacity: 0;
+        content: "Money";
+    }
+    12% {
+        opacity: 1;
+        content: "Money";
+
+    }
+    24% {
+        opacity: 0;
+        content: "Money";
+    }
+    36% {
+        opacity: 0;
+        content: "Cars";
+
+    }
+    48% {
+        opacity: 1;
+        content: "Cars";
+    }
+    60% {
+        opacity: 0;
+        content: "Cars";
+    }
+    72% {
+        opacity: 0;
+        content: "YOU";
+    }
+    84% {
+        opacity: 1;
+        content: "YOU";
+    }
+    100% {
+        opacity: 0;
+        content: "UR MOM TOO";
+    }
+    
+}
